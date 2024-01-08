@@ -4,18 +4,22 @@ Team Members:
 - Nuh Neguita Gurusinga
 - Sylvia Sinnelius
 
-<br> This project is the final mandatory assignment given by Purwadhika School of Technology, concluding the data science bootcamp's last term. It involves data analysis and machine learning tasks related to a bank marketing campaign dataset in portugal. Classification is utilized for this prediction task below. 
+<br> This project is the final mandatory assignment given by Purwadhika School of Technology, concluding the data science bootcamp's last term. It involves data analysis and machine learning tasks related to a bank marketing campaign dataset in portugal on the year 2013. Therefore, it may not be a reliable source for recent times. In terms of machine learning, classification is used for the prediction. 
 
 ## Table of Contents <br>
-I. Business Understanding <br>
-II. Data Understanding <br>
-III. Exploratory Data Analysis
-\t   i. Client Behaviour <br>
-\t   ii. Campaign Dynamics <br>
-\t   iii. Conclusion <br>
-\t   iv. Recommendation <br>
+**I. Business Understanding**
+<br>
+**II. Data Understanding**
+<br>
+**III. Exploratory Data Analysis**<br>
+&ensp; i. Client Behaviour <br>
+&ensp; ii. Campaign Dynamics <br>
+&ensp; iii. Conclusion <br>
+&ensp; iv. Recommendation <br>
+**IV. Machine Learning** <br>
+**V. CLR**<br>
+**VI. Business Recommendation**
 
-IV. Machine Learning
 
 ___
 
@@ -165,6 +169,7 @@ From the machine learning model, it has its advantages and disadvantages since t
 
 Let's deep dive into the results based on our preferred matrix, which is precision.
 
+# **III. Business Recommendation** 
 ## Based on our classification report (precision):
 **Class 0:**
 - 92% are labeled 0 and are, in reality, 0.

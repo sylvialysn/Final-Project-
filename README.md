@@ -1,13 +1,11 @@
 # **About**
-This project is made for the purpose of our final project in Purwadhika Digital Technology School.
+This project is the final mandatory assignment given by Purwadhika School of Technology, concluding the data science bootcamp's last term. It involves data analysis and machine learning tasks related to a bank marketing campaign dataset in portugal on the year 2013. Therefore, it may not be a reliable source for recent times. In terms of machine learning, classification is used for the prediction. 
 ___
 # **Final Project by Beta Team: Bank Marketing Campaigns Data**
 
 Team Members:
 - Nuh Neguita Gurusinga
 - Sylvia Sinnelius
-
-<br> This project is the final mandatory assignment given by Purwadhika School of Technology, concluding the data science bootcamp's last term. It involves data analysis and machine learning tasks related to a bank marketing campaign dataset in portugal on the year 2013. Therefore, it may not be a reliable source for recent times. In terms of machine learning, classification is used for the prediction. 
 
 ## Table of Contents <br>
 **I. Business Understanding**

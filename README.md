@@ -4,16 +4,16 @@ Team Members:
 - Nuh Neguita Gurusinga
 - Sylvia Sinnelius
 
-Table of Contents
+<br> This project is the final mandatory assignment given by Purwadhika School of Technology, concluding the data science bootcamp's last term. It involves data analysis and machine learning tasks related to a bank marketing campaign dataset in portugal. Classification is utilized for this prediction task below. 
+
+## Table of Contents <br>
 I. Business Understanding <br>
-
 II. Data Understanding
-
 III. Exploratory Data Analysis
-i. Client Behaviour <br>
-ii. Campaign Dynamics <br>
-iii. Conclusion <br>
-iv. Recommendation <br>
+    i. Client Behaviour <br>
+    ii. Campaign Dynamics <br>
+    iii. Conclusion <br>
+    iv. Recommendation <br>
 
 IV. Machine Learning
 
@@ -160,3 +160,53 @@ The highest percentage of 'unknown' values is owned by *'default'* variable, alm
 2. marital (0.19%)
 3. education (4.2%)
 4. housing and loan (both 2.4 %)
+
+From the machine learning model, it has its advantages and disadvantages since the model is not quite perfect yet due to a high imbalance in the dataset. The target class (class 1 or positive) constitutes 11%, while the other (class 0 or negative) is 89%. This can be addressed with more documentation on the positive class in the future to achieve a balance.
+
+Let's deep dive into the results based on our preferred matrix, which is precision.
+
+## Based on our classification report (precision):
+**Class 0:**
+- 92% are labeled 0 and are, in reality, 0.
+- 8% are labeled 0 but in reality are 1.
+
+**Class 1:**
+- 56% are labeled 1 and are, in reality, 1.
+- 44% are labeled 1 but in reality are 0.
+
+From our exploratory data analysis, we gathered a few results:
+1. This campaign's success rate is around 36%.
+2. The number of calls needed to persuade a client was 1-3, with a maximum of 7 calls.
+3. The average cost for a call is $2.7, based on the source below.
+
+Source: [Link](https://www.cxtoday.com/contact-centre/how-to-calculate-your-cost-per-inbound-outbound-call-and-why/)
+
+## Hypothetical case 
+**Case:** We have 100,000 clients with a success rate of 36% (only 36,080 clients actually deposit).
+
+**a. Without Machine Learning:**
+Telemarketing team needs to contact each client 3 times.
+- The cost = $2.7 x 3 x 100,000 clients = $810,000
+- Wasted cost = $2.7 x 3 x (100,000 - 36,080 clients) = $517,752
+- All clients will be reached out.
+
+**b. With Machine Learning:**
+Say our model predicted 58,500 customers will deposit (labeled as class 1).
+- The cost = $2.7 x 3 x 58,500 clients = $473,850
+- Extra = $2.7 x 3 x (100,000 - 58,500 clients) = $336,150
+
+However, since this model is still flawed with 44% incorrectly predicted as deposit (when, in reality, they do not deposit), there will be some wasted cost below.
+- Wasted cost =  $2.7 x 3 x (44% x 58,500 clients) = $208,494
+
+For class 0, our model predicted the rest of the 41,500 clients will NOT deposit. Since there is an 8% error or incorrectly predicted as will not deposit (when, in reality, they deposit), there will be some clients unreached.
+- Unreached clients = 8% x 41,500 clients = 3,320 clients.
+
+In conclusion, the pros and cons are:
+
+|   |Without machine learning| With machine learning   |
+|---|-------------------------|-------------------------|
+|Overall Cost| $810,000            | $473,850                |
+|Wasted Cost | $517,752            | $208,494                |
+|Unreached Clients| None          | 3,320 clients           |
+
+As mentioned shortly before, the major problem with the model is the imbalanced dataset causing greater and better prediction for class 0 data. The model needs more records on clients who deposit. Features that might be considered useful for the prediction include the income of each client. If the model is applied, A/B testing can be used to compare results with the model and without, ensuring that using a machine learning model is factually more efficient and profitable for the company.

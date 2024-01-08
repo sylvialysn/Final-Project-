@@ -8,12 +8,12 @@ Team Members:
 
 ## Table of Contents <br>
 I. Business Understanding <br>
-II. Data Understanding
+II. Data Understanding <br>
 III. Exploratory Data Analysis
-    i. Client Behaviour <br>
-    ii. Campaign Dynamics <br>
-    iii. Conclusion <br>
-    iv. Recommendation <br>
+\t   i. Client Behaviour <br>
+\t   ii. Campaign Dynamics <br>
+\t   iii. Conclusion <br>
+\t   iv. Recommendation <br>
 
 IV. Machine Learning
 
